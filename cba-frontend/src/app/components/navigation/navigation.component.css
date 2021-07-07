@@ -1,0 +1,27 @@
+.navigation{
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+}
+
+.navigation img{
+  width: 100px;
+}
+
+.navigation .links{
+  width: 60%;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navigation .links li{
+  text-decoration: none;
+  list-style: none;
+  color: #fff;
+}

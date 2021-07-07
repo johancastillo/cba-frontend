@@ -1,0 +1,8 @@
+.header-background{
+  background-size: cover !important;
+  transform: scaleX(-1);
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
