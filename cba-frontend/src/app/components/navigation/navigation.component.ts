@@ -28,12 +28,22 @@ export class NavigationComponent implements OnInit {
     // Navigation animate
     addEventListener('scroll', () => {
         let navEl = this.navigation.nativeElement
-        this.scroll = window.scrollY;
+        //console.log(window.scrollY)
+        //console.log(this.scroll)
 
-        if(this.scroll > 110){
-          navEl.classList.add('activate')
-        }else{
+        if(window.scrollY == 0){
+          navEl.classList.remove('deactivate')
           navEl.classList.remove('activate')
+        }else if(window.scrollY < this.scroll){
+          navEl.classList.add('activate')
+          navEl.classList.remove('deactivate')
+
+          this.scroll = window.scrollY;
+        }else{
+          navEl.classList.add('deactivate')
+          navEl.classList.remove('activate')
+
+          this.scroll = window.scrollY;
         }
 
     })

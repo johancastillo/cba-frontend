@@ -10,7 +10,12 @@
 }
 
 .navigation.activate{
+  opacity: 1;
   background: #fff !important;
+}
+
+.navigation.deactivate{
+  opacity: 0;
 }
 
 .navigation.activate .btn-login{
