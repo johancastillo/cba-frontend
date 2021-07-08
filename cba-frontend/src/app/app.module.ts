@@ -15,6 +15,8 @@ import { TeachersPageComponent } from './pages/teachers-page/teachers-page.compo
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { CoursesPageComponent } from './pages/courses-page/courses-page.component';
 import { AppComponent } from './components/app/app.component';
+import { CountersComponent } from './components/counters/counters.component';
+import { CounterCardComponent } from './components/counter-card/counter-card.component';
 
 
 @NgModule({
@@ -31,7 +33,9 @@ import { AppComponent } from './components/app/app.component';
     TeachersPageComponent,
     HomePageComponent,
     CoursesPageComponent,
-    AppComponent
+    AppComponent,
+    CountersComponent,
+    CounterCardComponent
   ],
   imports: [
     BrowserModule,

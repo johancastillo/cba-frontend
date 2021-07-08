@@ -1,0 +1,6 @@
+.counters{
+  padding: 30px 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
