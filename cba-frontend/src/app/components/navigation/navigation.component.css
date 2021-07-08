@@ -6,12 +6,46 @@
   position: fixed;
   z-index: 99;
   width: 100%;
+  transition: all 1s;
+}
+
+.navigation.activate{
+  background: #fff !important;
+}
+
+.navigation.activate .btn-login{
+  background: transparent;
+  border: 2px solid #00245c !important;
+  color: #00245c;
+}
+
+.navigation.activate .btn-register{
+  background: #00245c;
+  border: 2px solid #00245c !important;
+  color: #fff;
+}
+
+.navigation.activate .links li{
+  color: #00245c;
 }
 
 .navigation img{
   width: 100px;
 }
 
+.navigation #logo-color{
+  display: none;
+}
+
+
+
+.navigation.activate #logo-color{
+  display: block;
+}
+
+.navigation.activate #logo-white{
+  display: none;
+}
 .navigation .links{
   width: 60%;
   margin: 0;
