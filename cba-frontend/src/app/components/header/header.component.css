@@ -3,6 +3,44 @@
   transform: scaleX(-1);
   height: 100vh;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-around;
   align-items: center;
+}
+
+.header-background .content{
+  margin-right: 46px;
+  height: 60vh;
+  color: #fff !important;
+  transform: scaleX(-1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header-background .content h1{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 94px;
+  line-height: 117px;
+  text-transform: uppercase;
+
+  color: #A5C3FC;
+
+  text-shadow: 29px 4px 15px rgba(0, 0, 0, 0.25);
+}
+
+.header-background .content p{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 59px;
+
+  color: #FFFFFF;
+}
+
+.header-background .social-bar{
+  display: flex;
+  justify-content: space-between;
 }

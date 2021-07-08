@@ -2,7 +2,7 @@
   background: transparent;
   display: flex;
   justify-content: space-between;
-  padding: 10px 20px;
+  padding: 20px;
   position: fixed;
   z-index: 99;
   width: 100%;
@@ -24,4 +24,17 @@
   text-decoration: none;
   list-style: none;
   color: #fff;
+  cursor: pointer;
+}
+
+.btn-login{
+  color: #fff;
+  background: transparent;
+  border-color: #fff;
+}
+
+.btn-register{
+  color: #00245c;
+  background: #fff;
+  border-color: #fff;
 }
