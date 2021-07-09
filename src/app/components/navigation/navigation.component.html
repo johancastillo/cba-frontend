@@ -18,6 +18,30 @@
 
   </ul>
 
-  <img class="menu-white" src="assets/icons/menu-white.svg" alt="">
-  <img class="menu-color" src="assets/icons/menu-color.svg" alt="">
+    <img (click)="openMenu()" class="menu-white" #menuWhite src="assets/icons/menu-white.svg" alt="">
+    <img (click)="openMenu()" class="menu-color" #menuColor src="assets/icons/menu-color.svg" alt="">
+
+
+
+
+  <div class="menu" #asMenu>
+    <div class="content">
+
+    <div class="user">
+
+    </div>
+
+    <ul class="links">
+      <li>Inicio</li>
+      <li>Cursos</li>
+      <li>Escuelas</li>
+      <li>Talleres</li>
+      <li>Blog</li>
+      <li>Contáctanos</li>
+    </ul>
+  </div>
+
+
+  </div>
+
 </nav>

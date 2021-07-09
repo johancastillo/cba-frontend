@@ -1,14 +1,14 @@
 .counters{
   padding: 30px 20px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
 }
 
 /* Mobile version */
-@media screen and (max-width: 676px){
+@media screen and (max-width: 1074px){
   .counters{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr) !important;
+    grid-gap: 0 !important;
   }
 }

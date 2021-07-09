@@ -23,6 +23,9 @@ export class NavigationComponent implements OnInit {
   }
 
   @ViewChild("asNavigation") public navigation: ElementRef;
+  @ViewChild("asMenu") public menu: ElementRef;
+  @ViewChild("menuColor") public menuColor: ElementRef;
+  @ViewChild("menuWhite") public menuWhite: ElementRef;
 
   ngOnInit(): void {
     // Navigation animate
@@ -49,5 +52,25 @@ export class NavigationComponent implements OnInit {
     })
 
   }
+
+
+  openMenu(){
+    let menuEl = this.menu.nativeElement;
+    let menuClasses = Array.from(menuEl.classList);
+
+    if(menuClasses.includes('activate')){
+      menuEl.classList.remove('activate');
+      this.menuColor.nativeElement.setAttribute('src', 'assets/icons/menu-color.svg');
+      this.menuWhite.nativeElement.setAttribute('src', 'assets/icons/menu-white.svg');
+    }else{
+      menuEl.classList.add('activate');
+      this.menuColor.nativeElement.setAttribute('src', 'assets/icons/close-color.svg');
+      this.menuWhite.nativeElement.setAttribute('src', 'assets/icons/close-white.svg');
+    }
+
+
+
+  }
+
 
 }

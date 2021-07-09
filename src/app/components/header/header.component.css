@@ -51,10 +51,9 @@
 }
 
 /* Mobile version */
-@media screen and (max-width: 676px){
+@media screen and (max-width: 1074px){
   .header-background{
     flex-direction: column;
-    height: auto;
     padding: 60px 0;
   }
 
@@ -65,10 +64,21 @@
 
   .header-background .content h1{
     font-size: 54px;
+    text-align: center;
   }
 
   .header-background .content p{
     display: none;
   }
+
+  .header-background .content{
+    margin: 0 !important;
+    width: 70%;
+  }
+
+  .header-background .content .social-bar img{
+    width: 80%;
+  }
+
 
 }
