@@ -104,9 +104,13 @@
     display: none;
   }
 
+  .navigation img{
+    width: 64px;
+  }
+
   .navigation .menu-white{
     display: block;
-    width: 44px;
+    width: 30px;
     cursor: pointer;
   }
 
@@ -116,7 +120,7 @@
 
   .navigation.activate .menu-color{
     display: block;
-    width: 44px;
+    width: 30px;
     cursor: pointer;
   }
 }
