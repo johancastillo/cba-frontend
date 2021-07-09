@@ -32,3 +32,15 @@
 
   color: #000000;
 }
+
+/* Mobile version */
+@media screen and (max-width: 676px){
+  .counter-card .number{
+    font-size: 60px;
+  }
+
+  .counter-card{
+    width: 100%;
+    padding: 0 !important;
+  }
+}

@@ -1,0 +1,14 @@
+.counters{
+  padding: 30px 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* Mobile version */
+@media screen and (max-width: 676px){
+  .counters{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

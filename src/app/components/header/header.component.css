@@ -45,3 +45,30 @@
   display: flex;
   justify-content: space-between;
 }
+
+.image-header{
+  width: 50% !important;
+}
+
+/* Mobile version */
+@media screen and (max-width: 676px){
+  .header-background{
+    flex-direction: column;
+    height: auto;
+    padding: 60px 0;
+  }
+
+  .image-header{
+    width: 80% !important;
+  }
+
+
+  .header-background .content h1{
+    font-size: 54px;
+  }
+
+  .header-background .content p{
+    display: none;
+  }
+
+}

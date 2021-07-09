@@ -66,6 +66,10 @@
   cursor: pointer;
 }
 
+.navigation .menu-white, .navigation .menu-color{
+  display: none;
+}
+
 .btn-login{
   color: #fff;
   background: transparent;
@@ -76,4 +80,25 @@
   color: #00245c;
   background: #fff;
   border-color: #fff;
+}
+
+/* Mobile version */
+@media screen and (max-width: 676px){
+  .navigation .links{
+    display: none;
+  }
+
+  .navigation .menu-white{
+    display: block;
+    width: 44px;
+  }
+
+  .navigation.activate .menu-white{
+    display: none;
+  }
+
+  .navigation.activate .menu-color{
+    display: block;
+    width: 44px;
+  }
 }
